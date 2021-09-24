@@ -1,4 +1,4 @@
-package com.example.dollarsbankjsp;
+package com.dollarsbank.dollarsbankjsp;
 
 import java.io.*;
 import javax.servlet.http.*;
