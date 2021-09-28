@@ -10,37 +10,57 @@
             integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
             crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Welcome to DollarsBank!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="nav justify-content-end collapse navbar-collapse" id="navbarText">
-        <span class="navbar-text">
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Welcome to DollarsBank!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav justify-content-end collapse navbar-collapse" id="navbarText">
+        <span class="navbar-text text-light">
             &#128231; dollarsbank@global.com
             &#128241; 1 202 555 0191 <!-- uses solid style -->
-    </span>
+        </span>
+            </div>
         </div>
-    </div>
-</nav>
-<body>
-<div class="container">
+    </nav>
+</header>
+
+<main role="main" class="container">
     <div class="row">
         <div>
             <form action="hello-servlet" method="POST">
-                <div class="row g-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
-                    </div>
-                    <div class="col">
-                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
-                    </div>
+                <div class="form-group">
+                    <br/>
+                </div>
+                <h3>To register, please enter your details below.</h3>
+                <div class="form-group col-md-3">
+                    <label>Enter your Customer ID:</label>
+                    <input type="text" name="customer_id" class="form-control" placeholder="ex. 12345678">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Enter your Password:</label>
+                    <input type="password" name="password" class="form-control" placeholder="ex. 1234">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </form>
         </div>
     </div>
-</div>
+</main>
+
+<footer class="footer fixed-bottom d-block p-1 bg-dark">
+    <div class="container">
+        <span class="text-light"><p class="text-center">Copyright &copy; DollarsBank 2021</p></span>
+    </div>
+</footer>
+
 </body>
 </html>

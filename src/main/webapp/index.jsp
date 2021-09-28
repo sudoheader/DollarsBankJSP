@@ -34,10 +34,11 @@
 <main role="main" class="container">
     <div class="row">
         <div>
-            <form action="hello-servlet" method="POST">
+            <form action="<%= request.getContextPath() %>/hello-servlet" method="POST">
                 <div class="form-group">
                     <br/>
                 </div>
+                <h4>Customer Login</h4>
                 <div>
                     <img style="float: right; max-height: 400px; width: auto;" src="2bill.jpg">
                 </div>

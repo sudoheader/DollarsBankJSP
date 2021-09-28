@@ -1,6 +1,7 @@
 package com.dollarsbank.dollarsbankjsp;
 
 import java.io.*;
+import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -21,6 +22,11 @@ public class HelloServlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
         out.println("<p>" + "test" + "</p>");
         out.println("</body></html>");
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        response.sendRedirect("hello-servlet.jsp");
     }
 
     public void destroy() {
