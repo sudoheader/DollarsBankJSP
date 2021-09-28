@@ -30,20 +30,13 @@
     <div class="row">
         <div>
             <form action="hello-servlet" method="POST">
-                <div class="form-group">
-                    <br/>
-                </div>
-                <div class="form-group col-md-3">
-                    <label>Enter your Account Number:</label>
-                    <input type="text" name="account" class="form-control" placeholder="ex. 12345678">
-                </div>
-                <div class="form-group col-md-3">
-                    <label>Enter your Pin Number:</label>
-                    <input type="password" name="pin" class="form-control" placeholder="ex. 1234">
-                </div>
-                <br/>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Submit</button>
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
+                    </div>
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                    </div>
                 </div>
             </form>
         </div>
